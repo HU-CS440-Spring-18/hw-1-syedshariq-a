@@ -7,6 +7,9 @@
 #include <vector>
 #define PI 3.14159
 void display();
+void mousefunc(int button,int state,int x,int y);
+void idlefunc();
+void keyboardfunc(unsigned char key,int x,int y);
 
 struct Point {
     GLfloat x,y;
@@ -40,7 +43,7 @@ void display(){
     for (int i = 0; i < shapes.size(); ++i)
     {
         glVertexPointer(2, GL_FLOAT, 0, &shapes[i][0]);
-        glDrawArrays(GL_POLYGON,0,shapes[i].size());
+        glDrawArrays(GL_LINE_LOOP,0,shapes[i].size());
     }
     glDisableClientState(GL_VERTEX_ARRAY);
     glutSwapBuffers();
