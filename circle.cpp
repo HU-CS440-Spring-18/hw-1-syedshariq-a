@@ -1,17 +1,7 @@
-#include <iostream>
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include <GL/glut.h>
-#include "interpolate.cpp"
+#include "MyGlIncludes.h"
 #include <cmath>
-#include <vector>
 #define PI 3.14159
-void display();
 
-struct Point {
-    GLfloat x,y;
-    Point(float a,float b){x=a; y=b;}
-};
 int SCREEN_W = 640,SCREEN_H = 640;
 int numshapes = 6;
 std::vector<Point> quads;

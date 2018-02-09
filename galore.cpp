@@ -1,19 +1,8 @@
-#include <iostream>
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include "interpolate.cpp"
-#include <GL/glut.h>
-#include <vector>
+#include "MyGlIncludes.h"
 
-void display();
 void mousefunc(int button,int state,int x,int y);
 void idlefunc();
 void keyboardfunc(unsigned char key,int x,int y);
-
-struct Point {
-    GLfloat x,y;
-    Point(float a,float b){x=a; y=b;}
-};
 
 int sides = 3;
 std::vector<Point> quads;

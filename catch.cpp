@@ -1,14 +1,6 @@
-#include <iostream>
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include <GL/glut.h>
-#include "interpolate.cpp"
-#include <cstdlib>
-#include <ctime>
-#include <vector>
+#include "MyGlIncludes.h"
 
 
-void display();
 void mousefunc(int button,int state,int x,int y);
 bool checkInside(float x,float y);
 bool checkBounds(float x,float y);
@@ -16,10 +8,6 @@ void moveShape();
 void timerfunc(int timer);
 void idlefunc();
 
-struct Point {
-    GLfloat x,y;
-    Point(float a,float b){x=a; y=b;}
-};
 
 std::vector<Point> quads={Point(-0.1f,0.1f),Point(-0.1f, -0.1f),Point(0.1f, -0.1f),Point(0.1f,0.1f)};
 bool draw = false;

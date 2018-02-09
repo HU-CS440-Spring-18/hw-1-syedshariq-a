@@ -1,10 +1,5 @@
-#include <iostream>
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include <GL/glut.h>
+#include "MyGlIncludes.h"
 
-
-void display();
 int SCREEN_W = 320,SCREEN_H = 320;
 
 void display(){
