@@ -7,9 +7,6 @@
 #include <vector>
 #define PI 3.14159
 void display();
-void mousefunc(int button,int state,int x,int y);
-void idlefunc();
-void keyboardfunc(unsigned char key,int x,int y);
 
 struct Point {
     GLfloat x,y;
