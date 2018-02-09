@@ -1,14 +1,6 @@
-#include <iostream>
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include <GL/glut.h>
-int RecLevel = 1; //RecLevel 0 is a simple triangle. RecLevel 5 as given in the question.
+#include "MyGlIncludes.h"
 
-struct Point {
-    GLfloat x,y;
-    Point(float a,float b){x=a; y=b;}
-};
-void display();
+int RecLevel = 5; //RecLevel 0 is a simple triangle. RecLevel 5 as given in the question.
 void sierpinski(Point a,Point b,Point c,int n);
 int SCREEN_W = 640,SCREEN_H = 640;
 void display(){
